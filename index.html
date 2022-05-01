@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プログラミング</title>
+</head>
+<body>
+    <style>
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+a.btn-gradient {
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  border-radius: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2af598), to(#009efd));
+  background-image: -webkit-linear-gradient(left, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+a.btn-gradient:hover {
+  -webkit-transform: skew(0);
+  transform: skew(0);
+  color: #fff;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+}
+h2{
+  color: #FF8C00;
+  background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.example{
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #68779a;
+    background: #cbe8fa;
+    cursor: pointer;
+}
+    </style>
+    <script type="text/javascript">   
+    const music = new Audio('Button.mp3');
+    music.loop = false; 
+      // パターン1の色設定開始
+      function color1(){
+        document.bgColor = "#FFFFFF"; // bgcolor：背景色
+        document.fgColor = "#000000"; // text：文字の基本色
+        music.play();
+      }
+      // パターン1の色設定終了
+      
+      // パターン2の色設定開始
+      function color2(){
+        document.bgColor = "#424242";
+        document.fgColor = "#FFFFFF"; 
+        music.play();  
+      }
+      // パターン2の色設定終了
+      // パターン3の色設定開始
+      function color3(){
+        document.bgColor = "#000000";
+        document.fgColor = "#FFFFFF";  
+        music.play(); 
+      }
+      
+      // -->
+      </script>
+    <h1> <font size="7">プログラミング</font></h1>
+    <marquee behavior="scroll" direction="left" scrollamount = "20"><h2><font size="6">プログラミングを楽しもう!!</font></h></marquee> <!--右から左へスクロールします。-->
+    <input type="button" value="color1" onClick="color1()" class="example">
+   　<input type="button" value="color2" onClick="color2()" class="example">
+   　<input type="button" value="color3" onClick="color3()" class="example">
+    <br><h1>ボタンデザイン(html)</h1>
+    <a href="https://jajaaan.co.jp/css/button/" class="btn btn-gradient" target="_blank"><span>サイト1へGO!!</span></a>
+    <a href="https://dubdesign.net/download/html-css/button-design/" class="btn btn-gradient" target="_blank"><span>サイト2へGO!!</span></a>
+    <a href="https://saruwakakun.com/html-css/reference/buttons" class="btn btn-gradient" target="_blank"><span>サイト3へGO!!</span></a>
+    <br><h1>変数型一覧(C#)</h1>
+    <a href="https://dianxnao.com/c_sharp%E3%83%87%E3%83%BC%E3%82%BF%E5%9E%8B%E4%B8%80%E8%A6%A7/" class="btn btn-gradient" target="_blank"><span>サイトへGO!!</span></a>
+    <br><h1>Unityサイト</h1>
+    <a href="https://tama-lab.net/2017/05/unity%E3%81%A7%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%82%92%E7%A7%BB%E5%8B%95%E3%81%95%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95%E3%80%903d%E7%B7%A8%E3%80%91/" class="btn btn-gradient" target="_blank"><span>Unity移動方法!!</span></a>
+    <a href="https://www.popii33.com/unity-first-person-camera/" class="btn btn-gradient" target="_blank"><span>3Dカメラの作り方!!</span></a>
+    <a href="https://futabazemi.net/notes/unity-shift_run/" class="btn btn-gradient" target="_blank"><span>アニメーション!!</span></a>
+    <br><h1>カラー</h1>
+    <a href="https://html-color-codes.info/japanese/" class="btn btn-gradient" target="_blank"><span>サイトへGO!!</span></a>
+    <input type="Color"><br><h1>タグ一覧(html)</h1>
+    <a href="https://www.tagindex.com/html_tag/elements/" class="btn btn-gradient" target="_blank"><span>サイトへGO!!</span></a>
+    <br><h1>フリーフォント、記号フォント(html)</h1>
+    <a href="https://fontawesome.com/search?m=free" class="btn btn-gradient" target="_blank"><span>fontawesomeへGO!!</span></a>
+    <a href="https://saruwakakun.com/html-css/basic/font-awesome" class="btn btn-gradient" target="_blank"><span>fontawesomeの使い方を見にいこう!!</span></a>
+    <a href="https://fonts.google.com/?subset=japanese" class="btn btn-gradient" target="_blank"><span>Google FontsへGO!!</span></a>
+    <a href="https://fontfree.me/" class="btn btn-gradient" target="_blank"><span>Font FreeへGO!!</span></a>
+    <br><h1>フリー効果音、BGM</h1>
+    <a href="https://soundeffect-lab.info/" class="btn btn-gradient" target="_blank"><span>効果音ラボへGO!!</span></a>
+    <a href="https://dova-s.jp/" class="btn btn-gradient" target="_blank"><span>DOVA-SYNDROMEへGO!!</span></a>
+    <a href="https://maou.audio/" class="btn btn-gradient" target="_blank"><span>魔王魂へGO!!</span></a>
+    <a href="https://musmus.main.jp/" class="btn btn-gradient" target="_blank"><span>MusMusへGO!!</span></a>
+    <a href="https://otologic.jp/" class="btn btn-gradient" target="_blank"><span>otologicへGO!!</span></a>
+    <a href="http://www.kurage-kosho.info/" class="btn btn-gradient" target="_blank"><span>クラゲ工匠へGO!!</span></a>
+    <br><h1>フリー画像、イラスト素材</h1>
+    <a href="https://www.irasutoya.com/" class="btn btn-gradient" target="_blank"><span>いらすとやへGO!!</span></a>
+    <a href="https://www.pakutaso.com/" class="btn btn-gradient" target="_blank"><span>ぱくたそへGO!!</span></a>
+    <a href="https://dotown.maeda-design-room.net/" class="btn btn-gradient" target="_blank"><span>DOTOWNへGO!!</span></a>
+    <a href="https://pixabay.com/ja/" class="btn btn-gradient" target="_blank"><span>pixabayへGO!!</span></a>
+    <a href="https://www.tadapic.com/" class="btn btn-gradient" target="_blank"><span>tadapic(検索エンジン)へGO!!</span></a>
+    <br><h1>おすすめプログラミングチャンネル</h1>
+    <a href="https://www.youtube.com" class="btn btn-gradient" target="_blank"><span>YoutubeへGO!!</span></a>
+    <a href="https://www.youtube.com/c/%E3%83%A9%E3%83%A0%E3%83%80" class="btn btn-gradient" target="_blank"><span>ラムダ技術部(html)へGO!!</span></a>
+    <a href="https://www.youtube.com/channel/UC9yE5zNQtT-sItF53GfQs7w" class="btn btn-gradient" target="_blank"><span>ぷらぐら(Python)へGO!!</span></a>
+    <a href="https://www.youtube.com/channel/UCmrZx6L5NT_onReOmWhO3ug" class="btn btn-gradient" target="_blank"><span>ひろはす(C#)へGO!!</span></a>
+    <br><h1>Google検索</h1>
+    <a href="https://www.google.co.jp/webhp?tab=rw&authuser=0" class="btn btn-gradient" target="_blank"><span>GoogleへGO!!</span></a>
+    <a href="https://www.google.com/search?q=html&oq=html&aqs=chrome.0.69i59l3j0i433i512l3j0i512l2j0i433i512l2.1701j0j15&sourceid=chrome&ie=UTF-8" class="btn btn-gradient" target="_blank"><span>htmlを検索しよう!!</span></a>
+    <a href="https://www.google.com/search?q=Unity&sxsrf=ALiCzsatYPDUywVpdDExe2m1XcSQ0vSrQg%3A1651304084465&ei=lOZsYuqFHKyc0PEPptKu8Ao&ved=0ahUKEwjqn_uKo7v3AhUsDjQIHSapC64Q4dUDCA4&uact=5&oq=Unity&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBAgjECcyBAgjECcyBwgAELEDEEMyBAgAEEMyCggAELEDEIMBEEMyBAgAEEMyCwgAEIAEELEDEIMBOgoIABCABBCxAxAEOg0IABCABBCxAxCDARAESgQIQRgASgQIRhgAUABYzhBg5hZoAHABeACAAYIBiAGFBJIBAzIuM5gBAKABAcABAQ&sclient=gws-wiz" class="btn btn-gradient" target="_blank"><span>Unityを検索しよう!!</span></a>
+    <a href="https://www.google.com/search?q=Python&oq=Python&aqs=chrome..69i57j35i39j0i67l7j0i433i512.3487j0j15&sourceid=chrome&ie=UTF-8" class="btn btn-gradient" target="_blank"><span>Pythonを検索しよう!!</span></a>
+    <br><h1>ページ複製</h1>
+    <a href="" class="btn btn-gradient" target="_blank"><span>複製!!</span></a>
+</body>
+</html>
+
